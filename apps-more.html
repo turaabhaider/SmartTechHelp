@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apps & Tools Guides - SmartTechHelp</title>
+<link rel="stylesheet" href="style.css">
+<meta name="description" content="Explore step-by-step guides for popular apps like Messenger, Instagram, Play Store fixes, and Chrome extensions.">
+</head>
+<body>
+
+<header>
+    <div class="logo">SmartTechHelp</div>
+
+    <!-- Mobile Menu Button (shown only on phone with CSS) -->
+    <button class="menu-toggle" id="menuToggle">☰</button>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="android-more.html">Android</a>
+        <a href="category-windows.html">Windows</a>
+        <a href="category-apps.html">Apps & Tools</a>
+        <a href="contact.html">Contact</a>
+
+        <!-- Dark Mode Toggle -->
+        <button id="darkModeToggle" class="dark-mode-btn">🌙</button>
+    </nav>
+</header>
+
+</header>
+
+<section class="content">
+    <h1>Apps & Tools Guides</h1>
+    <p>Check out detailed guides for popular apps and tools to fix issues, recover accounts, and improve productivity.</p>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Fix Play Store Download Pending</h3>
+            <p>Learn how to resolve “Download Pending” issues on Google Play Store so you can install apps without problems.</p>
+            <a href="article-playstore-pending.html">Read More</a>
+        </div>
+        <div class="card">
+            <h3>How to Recover Instagram Account</h3>
+            <p>Step-by-step methods to regain access to your Instagram account if it’s hacked, disabled, or forgotten password.</p>
+            <a href="article-recover-instagram.html">Read More</a>
+        </div>
+        <div class="card">
+            <h3>Fix Messenger Not Sending Messages</h3>
+            <p>Troubleshoot Messenger app issues and fix connectivity or app-related problems preventing messages from sending.</p>
+            <a href="article-messenger-not-sending.html">Read More</a>
+        </div>
+        <div class="card">
+            <h3>Best Productivity Chrome Extensions</h3>
+            <p>Discover top Chrome extensions to boost productivity, manage tasks, and organize your workflow effectively.</p>
+            <a href="article-chrome-extensions.html">Read More</a>
+        </div>
+    </div>
+</section>
+<div class="adsense-placeholder">
+  <p>Your Ad Will Appear Here Soon</p>
+  <small>Google AdSense is reviewing this site</small>
+</div>
+<footer>
+    <p>© 2025 SmartTechHelp</p>
+    <a href="privacy.html">Privacy Policy</a> |
+    <a href="terms.html">Terms & Conditions</a>
+</footer>
+
+
+<script src="script.js"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+<script>
+    const menuToggle = document.getElementById("menuToggle");
+    const navMenu = document.querySelector("header nav");
+
+    menuToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+    });
+</script>
+
+</body>
+</html>
