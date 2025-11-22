@@ -295,4 +295,11 @@ nav {
         padding: 8px 0;
     }
 }
+/* Custom fix for button alignment */
+.tutorial-section {
+    /* Centers all inline-level content (including the <p> tag and the <button>) */
+    text-align: center;
+    /* Adds spacing above and below the section for a cleaner look */
+    padding: 20px 0; 
+}
 
