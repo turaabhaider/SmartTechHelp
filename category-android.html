@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Android Fixes - SmartTechHelp</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">SmartTechHelp</div>
+
+    <!-- Mobile Menu Button (shown only on phone with CSS) -->
+    <button class="menu-toggle" id="menuToggle">☰</button>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="android-more.html">Android</a>
+        <a href="category-windows.html">Windows</a>
+        <a href="category-apps.html">Apps & Tools</a>
+        <a href="contact.html">Contact</a>
+
+        <!-- Dark Mode Toggle -->
+        <button id="darkModeToggle" class="dark-mode-btn">🌙</button>
+    </nav>
+</header>
+
+<section class="content">
+    <h1>Android Fixes</h1>
+    <p>Android devices are convenient, but sometimes apps fail to install or phones slow down. Here on SmartTechHelp, we provide step-by-step tutorials to fix Android issues quickly. Learn how to clear cache, recover data, speed up your phone, and solve common Android problems efficiently. Our Android guides are suitable for beginners and advanced users alike.</p>
+
+    <ul class="list">
+        <li><a href="article.html">How to Fix App Not Installed on Android</a></li>
+        <li><a href="article.html">How to Speed Up a Slow Android Phone</a></li>
+        <li><a href="article.html">How to Recover Deleted WhatsApp Messages</a></li>
+    </ul>
+</section>
+<div class="adsense-placeholder">
+  <p>Your Ad Will Appear Here Soon</p>
+  <small>Google AdSense is reviewing this site</small>
+</div>
+
+<footer>
+    <p>© 2025 SmartTechHelp</p>
+    <a href="privacy.html">Privacy Policy</a> |
+    <a href="terms.html">Terms & Conditions</a>
+</footer>
+
+<script>
+    const menuToggle = document.getElementById("menuToggle");
+    const navMenu = document.querySelector("header nav");
+
+    menuToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - SmartTechHelp</title>
+<link rel="stylesheet" href="/style.css">
+<meta name="description" content="Contact SmartTechHelp for tech questions, feedback, or requests. Get in touch with our team quickly.">
+</head>
+<body>
+
+<header>
+    <div class="logo">SmartTechHelp</div>
+
+    <!-- Mobile Menu Button (shown only on phone with CSS) -->
+    <button class="menu-toggle" id="menuToggle">☰</button>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="android-more.html">Android</a>
+        <a href="category-windows.html">Windows</a>
+        <a href="category-apps.html">Apps & Tools</a>
+        <a href="contact.html">Contact</a>
+
+        <!-- Dark Mode Toggle -->
+        <button id="darkModeToggle" class="dark-mode-btn">🌙</button>
+    </nav>
+</header>
+
+<section class="content">
+    <h1>Contact SmartTechHelp</h1>
+    <p>We’d love to hear from you! Reach out with your questions, suggestions, or feedback.</p>
+
+    <h2>Email Us</h2>
+    <p>support@smarttechhelp.com</p>
+
+    <h2>Response Time</h2>
+    <p>We respond to emails within 24 hours. Please check your spam folder if you don’t receive a reply.</p>
+
+    <h2>Common Questions</h2>
+    <ul>
+        <li>Can I request a tutorial for a specific app? → Yes, email us your request.</li>
+        <li>Do you offer remote tech support? → No, only guides and tutorials.</li>
+        <li>Can I use your guides commercially? → Content is for personal use, please contact us for permission.</li>
+    </ul>
+</section>
+
+<div class="adsense-placeholder">
+  <p>Your Ad Will Appear Here Soon</p>
+  <small>Google AdSense is reviewing this site</small>
+</div>
+<footer>
+    <p>© 2025 SmartTechHelp</p>
+    <a href="privacy.html">Privacy Policy</a> |
+    <a href="terms.html">Terms & Conditions</a>
+</footer>
+
+<script src="/script.js"></script>
+<script>
+    const menuToggle = document.getElementById("menuToggle");
+    const navMenu = document.querySelector("header nav");
+
+    menuToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+    });
+</script>
+
+</body>
+</html>
